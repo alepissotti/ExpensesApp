@@ -1,2 +1,2 @@
 # ExpensesApp
-Aplicación de administración de gastos
+Aplicación de administración de gastos.

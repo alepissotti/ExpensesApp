@@ -139,3 +139,11 @@ C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\MediatR.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\Expenses.Application.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\Expenses.Application.pdb
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\AutoMapper.dll

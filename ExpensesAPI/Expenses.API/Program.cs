@@ -1,32 +1,16 @@
-using Expenses.Infrastructure.Persistence;
-using Microsoft.EntityFrameworkCore;
+using Expenses.API;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-//DbContext
-builder.Services.AddDbContext<ExpensesDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+// Add services to the container using Startup
+var startup = new Startup(builder.Configuration);
+startup.ConfigureServices(builder.Services);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseAuthorization();
-
-app.MapControllers();
+// Configure the HTTP request pipeline using Startup
+var env = app.Environment;
+startup.Configure(app, env);
 
 app.Run();

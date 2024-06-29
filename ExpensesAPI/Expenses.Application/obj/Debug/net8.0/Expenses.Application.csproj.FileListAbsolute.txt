@@ -10,3 +10,9 @@ C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\obj\Debu
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\obj\Debug\net8.0\refint\Expenses.Application.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\obj\Debug\net8.0\Expenses.Application.pdb
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\obj\Debug\net8.0\ref\Expenses.Application.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\bin\Debug\net8.0\Expenses.Domain.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\bin\Debug\net8.0\Expenses.Infrastructure.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\bin\Debug\net8.0\Expenses.Domain.pdb
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\bin\Debug\net8.0\Expenses.Infrastructure.pdb
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\obj\Debug\net8.0\Expenses.Application.csproj.AssemblyReference.cache
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Application\obj\Debug\net8.0\Expenses.18266F0E.Up2Date

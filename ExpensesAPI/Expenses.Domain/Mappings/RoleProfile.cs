@@ -8,7 +8,8 @@ namespace Expenses.Domain.Mappings
     {
         public RoleProfile()
         {
-            CreateMap<Role, RoleDTO>();
+            CreateMap<Role, RoleDTO>()
+            .ForMember(dest => dest.Id, src => src.MapFrom(prop => Hashid.Encode(prop.Id)));
         }
     }
 }

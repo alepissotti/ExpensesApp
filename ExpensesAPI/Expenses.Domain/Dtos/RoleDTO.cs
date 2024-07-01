@@ -1,8 +1,7 @@
 ﻿namespace Expenses.Domain.Dtos
 {
-    public class RoleDTO
+    public class RoleDTO: BaseDTO
     {
-        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

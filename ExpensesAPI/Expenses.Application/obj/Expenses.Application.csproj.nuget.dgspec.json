@@ -69,6 +69,10 @@
               "target": "Package",
               "version": "[11.3.0, )"
             },
+            "Hashids.net": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.3.0, )"
@@ -147,6 +151,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Hashids.net": {
+              "target": "Package",
+              "version": "[1.7.0, )"
             }
           },
           "imports": [

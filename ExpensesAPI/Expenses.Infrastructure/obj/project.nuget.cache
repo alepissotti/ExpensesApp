@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qo9wizU+bYo=",
+  "dgSpecHash": "Lv0Xx25EvQo=",
   "success": true,
   "projectFilePath": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Infrastructure\\Expenses.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alepi\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\alepi\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\alepi\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\alepi\\.nuget\\packages\\hashids.net\\1.7.0\\hashids.net.1.7.0.nupkg.sha512",
     "C:\\Users\\alepi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\alepi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\alepi\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

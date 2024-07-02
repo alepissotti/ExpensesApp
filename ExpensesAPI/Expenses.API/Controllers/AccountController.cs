@@ -1,4 +1,6 @@
-﻿using Expenses.Application.Features.Accounts.Queries;
+﻿using Expenses.Application.Features.Accounts.Commands;
+using Expenses.Application.Features.Accounts.Queries;
+using Expenses.Domain.Dtos;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +23,13 @@ namespace Expenses.API.Controllers
         {
             GetAccountQueryResponse response = await _mediator.Send(request);
 
+            return response;
+        }
+
+        [HttpPost]
+        public async Task<AccountDTO> Post([FromBody] CreateAccountCommand request)
+        {
+            AccountDTO response = await _mediator.Send(request);
             return response;
         }
     }

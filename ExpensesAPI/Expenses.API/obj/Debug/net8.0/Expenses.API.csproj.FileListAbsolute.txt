@@ -148,3 +148,4 @@ C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\AutoMapper.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\Hashids.net.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\BCrypt.Net-Next.dll

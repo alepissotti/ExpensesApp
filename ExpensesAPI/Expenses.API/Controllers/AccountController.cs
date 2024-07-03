@@ -32,5 +32,13 @@ namespace Expenses.API.Controllers
             AccountDTO response = await _mediator.Send(request);
             return response;
         }
+
+        [HttpPost("login")]
+        public async Task<LoginAccountQueryResponse> Login([FromQuery] LoginAccountQuery request)
+        {
+            LoginAccountQueryResponse response = await _mediator.Send(request);
+
+            return response;
+        }
     }
 }

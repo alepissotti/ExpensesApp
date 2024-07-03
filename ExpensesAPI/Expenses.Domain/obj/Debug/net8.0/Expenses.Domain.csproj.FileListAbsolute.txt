@@ -1,6 +1,7 @@
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\bin\Debug\net8.0\Expenses.Domain.deps.json
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\bin\Debug\net8.0\Expenses.Domain.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\bin\Debug\net8.0\Expenses.Domain.pdb
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\obj\Debug\net8.0\Expenses.Domain.csproj.AssemblyReference.cache
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\obj\Debug\net8.0\Expenses.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\obj\Debug\net8.0\Expenses.Domain.AssemblyInfoInputs.cache
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\obj\Debug\net8.0\Expenses.Domain.AssemblyInfo.cs
@@ -10,4 +11,3 @@ C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\obj\Debug\net
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\obj\Debug\net8.0\refint\Expenses.Domain.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\obj\Debug\net8.0\Expenses.Domain.pdb
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\obj\Debug\net8.0\ref\Expenses.Domain.dll
-C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.Domain\obj\Debug\net8.0\Expenses.Domain.csproj.AssemblyReference.cache

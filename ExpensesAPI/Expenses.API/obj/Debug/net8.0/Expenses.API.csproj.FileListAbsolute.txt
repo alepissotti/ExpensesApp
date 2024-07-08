@@ -16,6 +16,7 @@ C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\Humanizer.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\MediatR.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -149,4 +150,3 @@ C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\obj\Debug\net8.0
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\obj\Debug\net8.0\Expenses.API.pdb
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\obj\Debug\net8.0\Expenses.API.genruntimeconfig.cache
 C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\obj\Debug\net8.0\ref\Expenses.API.dll
-C:\Cursos y capacitaciones\ExpensesApp\ExpensesAPI\Expenses.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

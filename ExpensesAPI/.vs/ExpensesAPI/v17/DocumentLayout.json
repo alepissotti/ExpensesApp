@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1FBDAF0B-18DB-45B0-8D86-DD70141F6732}|Expenses.Infrastructure\\Expenses.Infrastructure.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.infrastructure\\persistence\\expensesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FBDAF0B-18DB-45B0-8D86-DD70141F6732}|Expenses.Infrastructure\\Expenses.Infrastructure.csproj|solutionrelative:expenses.infrastructure\\persistence\\expensesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.application\\features\\accounts\\queries\\loginaccountquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|solutionrelative:expenses.application\\features\\accounts\\queries\\loginaccountquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|solutionrelative:expenses.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.application\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|solutionrelative:expenses.application\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.application\\features\\accounts\\commands\\createaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|solutionrelative:expenses.application\\features\\accounts\\commands\\createaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|solutionrelative:expenses.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|solutionrelative:expenses.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FBDAF0B-18DB-45B0-8D86-DD70141F6732}|Expenses.Infrastructure\\Expenses.Infrastructure.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.infrastructure\\configurations\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FBDAF0B-18DB-45B0-8D86-DD70141F6732}|Expenses.Infrastructure\\Expenses.Infrastructure.csproj|solutionrelative:expenses.infrastructure\\configurations\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ValidationException.cs",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Exceptions\\ValidationException.cs",
-              "RelativeDocumentMoniker": "Expenses.Application\\Exceptions\\ValidationException.cs",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Exceptions\\ValidationException.cs",
-              "RelativeToolTip": "Expenses.Application\\Exceptions\\ValidationException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T20:33:10.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginAccountQuery.cs",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
-              "RelativeDocumentMoniker": "Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
-              "RelativeToolTip": "Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAkwEwAAAAMAAAA",
+              "Title": "ExpensesDbContext.cs",
+              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Infrastructure\\Persistence\\ExpensesDbContext.cs",
+              "RelativeDocumentMoniker": "Expenses.Infrastructure\\Persistence\\ExpensesDbContext.cs",
+              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Infrastructure\\Persistence\\ExpensesDbContext.cs",
+              "RelativeToolTip": "Expenses.Infrastructure\\Persistence\\ExpensesDbContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA5wDUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T20:05:34.425Z",
+              "WhenOpened": "2024-07-08T22:55:44.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Startup.cs",
               "RelativeDocumentMoniker": "Expenses.API\\Startup.cs",
               "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Startup.cs",
               "RelativeToolTip": "Expenses.API\\Startup.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAowFoAAAANAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAowG0AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T19:43:21.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Expenses.API\\appsettings.json",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\appsettings.json",
-              "RelativeToolTip": "Expenses.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAACWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-03T19:39:15.957Z",
+              "WhenOpened": "2024-07-08T22:54:31.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Expenses.API\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Expenses.API\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwB8AAAAMAAAA",
+              "Title": "LoginAccountQuery.cs",
+              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
+              "RelativeDocumentMoniker": "Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
+              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
+              "RelativeToolTip": "Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAYwEwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T23:03:47.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccountConfiguration.cs",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Infrastructure\\Configurations\\AccountConfiguration.cs",
-              "RelativeDocumentMoniker": "Expenses.Infrastructure\\Configurations\\AccountConfiguration.cs",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Infrastructure\\Configurations\\AccountConfiguration.cs",
-              "RelativeToolTip": "Expenses.Infrastructure\\Configurations\\AccountConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T22:45:54.655Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateAccountCommand.cs",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Commands\\CreateAccountCommand.cs",
-              "RelativeDocumentMoniker": "Expenses.Application\\Features\\Accounts\\Commands\\CreateAccountCommand.cs",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Commands\\CreateAccountCommand.cs",
-              "RelativeToolTip": "Expenses.Application\\Features\\Accounts\\Commands\\CreateAccountCommand.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAmwDAAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T22:32:33.427Z",
+              "WhenOpened": "2024-07-08T22:52:30.173Z",
               "EditorCaption": ""
             }
           ]

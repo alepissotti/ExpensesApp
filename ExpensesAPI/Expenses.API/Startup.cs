@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using System.Reflection;
 using System.Text;
 
@@ -32,7 +33,6 @@ namespace Expenses.API
                 options.Filters.Add<ApiExceptionFilterAttribute>();
             });
             services.AddEndpointsApiExplorer();
-            services.AddSwaggerGen();
 
             // DbContext
             services.AddDbContext<ExpensesDbContext>(options =>
@@ -45,18 +45,17 @@ namespace Expenses.API
             // MediatR
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<GetAccountQueryHandler>());
 
-            //fluentValidation
+            // FluentValidation
             services.AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<GetAccountQuery>());
 
-            //Automapper
+            // Automapper
             services.AddAutoMapper(typeof(RoleProfile).Assembly);
 
-            
             services.Configure<ApiBehaviorOptions>(opt => opt.SuppressModelStateInvalidFilter = true);
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
 
-            //JWT Authentication
+            // JWT Authentication
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -72,13 +71,43 @@ namespace Expenses.API
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer= jwtSettings["Issuer"],
+                    ValidIssuer = jwtSettings["Issuer"],
                     ValidAudience = jwtSettings["Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(key)
                 };
             });
 
             services.AddAuthorization();
+
+            // Swagger authorization
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ExpensesApi", Version = "v1" });
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer"
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        Array.Empty<string>()
+                    }
+                });
+            });
+            // Http context accesor
+            services.AddHttpContextAccessor();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -86,8 +115,13 @@ namespace Expenses.API
             // Configure the HTTP request pipeline.
             if (env.IsDevelopment())
             {
+                app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Expenses API v1");
+                    c.RoutePrefix = string.Empty;
+                });
             }
 
             app.UseRouting();

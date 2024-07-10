@@ -74,7 +74,10 @@ namespace Expenses.Application.Features.Accounts.Queries
 
         public async Task<LoginAccountQueryResponse> Handle(LoginAccountQuery request, CancellationToken cancellationToken)
         {
-            Account account = await _context.Accounts.SingleOrDefaultAsync(acc => acc.UserName.Equals(request.Username));
+            Account account = await _context.Accounts
+                                            .Include(acc => acc.AccountPermissions)
+                                            .ThenInclude(ap => ap.Permission)
+                                            .SingleOrDefaultAsync(acc => acc.UserName.Equals(request.Username));
 
             if (account is null)
                 throw new NotFoundException("No se ha localizado el usuario");

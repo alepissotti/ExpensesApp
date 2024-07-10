@@ -1,4 +1,5 @@
-﻿using Expenses.Application.Features.Accounts.Commands;
+﻿using Expenses.Application.Attributes;
+using Expenses.Application.Features.Accounts.Commands;
 using Expenses.Application.Features.Accounts.Queries;
 using Expenses.Domain.Dtos;
 using MediatR;
@@ -19,6 +20,7 @@ namespace Expenses.API.Controllers
         }
 
         [HttpGet("{Id}")]
+        [AuthorizePermission("ACCOUNTS_GET")]
         public async Task<GetAccountQueryResponse> Get([FromRoute] GetAccountQuery request)
         {
             GetAccountQueryResponse response = await _mediator.Send(request);

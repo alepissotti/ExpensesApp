@@ -18,8 +18,8 @@ namespace Expenses.Application.Filters
                 case NotFoundException notFoundEx:
                     HandleNotFoundException(context, notFoundEx);
                     break;
-                case ForbiddenException:
-                    HandleForbiddenAccessException(context);
+                case ForbiddenException forbiddenEx:
+                    HandleForbiddenAccessException(context, forbiddenEx);
                     break;
                 default:
                     HandleUnknownException(context);
@@ -65,13 +65,13 @@ namespace Expenses.Application.Filters
             context.ExceptionHandled = true;
         }
 
-        private void HandleForbiddenAccessException(ExceptionContext context)
+        private void HandleForbiddenAccessException(ExceptionContext context, ForbiddenException exception)
         {
             var details = new ProblemDetails
             {
-                Status = StatusCodes.Status403Forbidden,
                 Title = "Prohibido",
-                Type = "https://tools.ietf.org/html/rfc7231#section-6.5.3"
+                Type = "https://tools.ietf.org/html/rfc7231#section-6.5.3",
+                Detail = exception.Message
             };
 
             context.Result = new ObjectResult(details)

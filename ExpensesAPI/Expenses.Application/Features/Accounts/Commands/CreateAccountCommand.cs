@@ -5,6 +5,7 @@ using Expenses.Domain.Entities;
 using Expenses.Infrastructure.Persistence;
 using FluentValidation;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace Expenses.Application.Features.Accounts.Commands
 {
@@ -40,6 +41,17 @@ namespace Expenses.Application.Features.Accounts.Commands
 
         public async Task<AccountDTO> Handle(CreateAccountCommand request, CancellationToken cancellationToken)
         {
+            bool userNameExist = await _context.Accounts
+                                               .Where(acc => acc.UserName.Equals(request.UserName) && (!acc.Deleted.HasValue || !acc.Deleted.Value))
+                                               .AnyAsync();
+
+            if (userNameExist)
+            {
+                List<FluentValidation.Results.ValidationFailure> failures = new List<FluentValidation.Results.ValidationFailure>();
+                failures.Add(new FluentValidation.Results.ValidationFailure { PropertyName = "Username", ErrorMessage = "El usuario ya se encuentra registrado" });
+                throw new Exceptions.ValidationException(failures);
+            }
+            
             Account newAccount = new Account
             {
                 FirstName = request.FirstName,

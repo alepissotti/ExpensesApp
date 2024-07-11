@@ -4,6 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Expenses.Domain.Entities;
 using FluentValidation;
 using Expenses.Application.Exceptions;
+using Expenses.Domain;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Expenses.Domain.Dtos;
 
 namespace Expenses.Application.Features.Accounts.Queries
 {
@@ -12,49 +16,40 @@ namespace Expenses.Application.Features.Accounts.Queries
     {
         public GetAccountQueryValidator()
         {
-            RuleFor(p => p.Id).NotNull().GreaterThanOrEqualTo(1);
+            RuleFor(p => p.Id).NotNull().NotEmpty();
         }
     }
-    public class GetAccountQuery: IRequest<GetAccountQueryResponse>
+    public class GetAccountQuery: IRequest<AccountDTO>
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
     }
 
-    public class GetAccountQueryHandler: IRequestHandler<GetAccountQuery, GetAccountQueryResponse>
+    public class GetAccountQueryHandler: IRequestHandler<GetAccountQuery, AccountDTO>
     {
         private readonly ExpensesDbContext _context;
+        private readonly IMapper _mapper;
 
-        public GetAccountQueryHandler(ExpensesDbContext context)
+        public GetAccountQueryHandler(ExpensesDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
-        public async Task<GetAccountQueryResponse> Handle(GetAccountQuery request, CancellationToken cancellationToken)
+        public async Task<AccountDTO> Handle(GetAccountQuery request, CancellationToken cancellationToken)
         {
-            Account account = await _context.Accounts.FirstOrDefaultAsync(a => a.Id == request.Id && !a.Deleted.Value);
+            Account account = await _context.Accounts
+                                            .FirstOrDefaultAsync(a =>
+                                                                    a.Id == Hashid.Decode(request.Id) &&
+                                                                    (!a.Deleted.HasValue || !a.Deleted.Value)
+                                                                );
 
             if (account == null)
             {
                 throw new NotFoundException(nameof (Account), request.Id);
             }
 
-            return new GetAccountQueryResponse
-            {
-                FirstName = account.FirstName,
-                LastName = account.LastName,
-                UserName = account.UserName,
-                Id = account.Id,
-                RoleId = account.RoleId,
-            };
+            return _mapper.Map<AccountDTO>(account);
         }
     }
 
-    public class GetAccountQueryResponse
-    {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string UserName { get; set; }
-        public int RoleId { get; set; }
-    }
 }

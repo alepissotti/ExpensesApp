@@ -2,6 +2,7 @@
 using Expenses.Application.Features.Accounts.Commands;
 using Expenses.Application.Features.Accounts.Queries;
 using Expenses.Domain.Dtos;
+using Expenses.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,15 +21,16 @@ namespace Expenses.API.Controllers
         }
 
         [HttpGet("{Id}")]
-        [AuthorizePermission("ACCOUNTS_GET")]
-        public async Task<GetAccountQueryResponse> Get([FromRoute] GetAccountQuery request)
+        [AuthorizePermission(PermissionNames.ACCOUNTS_GET)]
+        public async Task<AccountDTO> Get([FromRoute] GetAccountQuery request)
         {
-            GetAccountQueryResponse response = await _mediator.Send(request);
+            AccountDTO response = await _mediator.Send(request);
 
             return response;
         }
 
         [HttpPost]
+        [AuthorizePermission(PermissionNames.ACCOUNTS_ADD)]
         public async Task<AccountDTO> Post([FromBody] CreateAccountCommand request)
         {
             AccountDTO response = await _mediator.Send(request);
@@ -40,6 +42,14 @@ namespace Expenses.API.Controllers
         {
             LoginAccountQueryResponse response = await _mediator.Send(request);
 
+            return response;
+        }
+
+        [HttpPut]
+        [AuthorizePermission(PermissionNames.ACCOUNTS_UPDATE)]
+        public async Task<AccountDTO> Put([FromBody] UpdateAccountCommand request)
+        {
+            AccountDTO response = await _mediator.Send(request);
             return response;
         }
     }

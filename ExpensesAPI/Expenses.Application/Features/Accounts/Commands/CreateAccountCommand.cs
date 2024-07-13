@@ -15,7 +15,7 @@ namespace Expenses.Application.Features.Accounts.Commands
         {
             RuleFor(p => p.FirstName).NotEmpty().NotNull().MaximumLength(25);
             RuleFor(p => p.LastName).NotEmpty().NotNull().MaximumLength(25);
-            RuleFor(p => p.UserName).NotEmpty().NotNull().MaximumLength(15);
+            RuleFor(p => p.UserName).NotEmpty().NotNull().MaximumLength(25);
             RuleFor(p => p.RoleId).NotNull().GreaterThanOrEqualTo(1);
         }
     }

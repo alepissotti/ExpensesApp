@@ -17,7 +17,7 @@ namespace Expenses.Application.Features.Accounts.Commands
             RuleFor(p => p.Id).NotEmpty().NotNull();
             RuleFor(p => p.FirstName).NotEmpty().NotNull().MaximumLength(25);
             RuleFor(p => p.LastName).NotEmpty().NotNull().MaximumLength(25);
-            RuleFor(p => p.UserName).NotEmpty().NotNull().MaximumLength(15);
+            RuleFor(p => p.UserName).NotEmpty().NotNull().MaximumLength(25);
         }
     }
     public class UpdateAccountCommand: IRequest<AccountDTO>

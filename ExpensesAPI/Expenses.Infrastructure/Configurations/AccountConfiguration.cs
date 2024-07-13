@@ -17,7 +17,7 @@ namespace Expenses.Infrastructure.Configurations
                    .IsRequired();
 
             builder.Property(p => p.UserName)
-                   .HasMaxLength(15)
+                   .HasMaxLength(25)
                    .IsRequired();
 
             builder.Property(p => p.Password)

@@ -20,6 +20,15 @@ namespace Expenses.API.Controllers
             _mediator = mediator;
         }
 
+        [HttpGet]
+        [AuthorizePermission(PermissionNames.ACCOUNTS_GETALL)]
+        public async Task<List<AccountDTO>> GetAll([FromQuery] GetAccountsQuery request)
+        {
+            List<AccountDTO> response = await _mediator.Send(request);
+
+            return response;
+        }
+
         [HttpGet("{Id}")]
         [AuthorizePermission(PermissionNames.ACCOUNTS_GET)]
         public async Task<AccountDTO> Get([FromRoute] GetAccountQuery request)
@@ -50,6 +59,22 @@ namespace Expenses.API.Controllers
         public async Task<AccountDTO> Put([FromBody] UpdateAccountCommand request)
         {
             AccountDTO response = await _mediator.Send(request);
+            return response;
+        }
+
+        [HttpDelete("{Id}")]
+        [AuthorizePermission(PermissionNames.ACCOUNTS_DELETE)]
+        public async Task<DeleteAccountCommandResponse> Delete([FromRoute] DeleteAccountCommand request)
+        {
+            DeleteAccountCommandResponse response = await _mediator.Send(request); 
+            return response;
+        }
+
+        [HttpPut("change_password")]
+        [AuthorizePermission(PermissionNames.ACCOUNTS_CHANGE_PASS)]
+        public async Task<ChangePassAccountCommandResponse> ChangePassword([FromBody] ChangePassAccountCommand request)
+        {
+            ChangePassAccountCommandResponse response = await _mediator.Send(request);
             return response;
         }
     }

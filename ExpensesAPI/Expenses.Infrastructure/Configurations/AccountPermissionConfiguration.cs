@@ -8,7 +8,9 @@ namespace Expenses.Infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<AccountPermission> builder)
         {
-            
+            builder.HasIndex(x => new { x.AccountId, x.PermissionId })
+                .HasDatabaseName("IX_Account_Permission")
+                .IsUnique();
         }
     }
 }

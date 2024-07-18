@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
 
   </header>
-
+  <Toast />
   <RouterView />
 </template>
 

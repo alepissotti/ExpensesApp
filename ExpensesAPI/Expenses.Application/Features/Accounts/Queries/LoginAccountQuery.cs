@@ -56,9 +56,8 @@ namespace Expenses.Application.Features.Accounts.Queries
             
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, account.Id.ToString()),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim("Account", JsonSerializer.Serialize(account))
+                new Claim(JwtRegisteredClaimNames.Sub, JsonSerializer.Serialize(account)),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 
             var token = new JwtSecurityToken(

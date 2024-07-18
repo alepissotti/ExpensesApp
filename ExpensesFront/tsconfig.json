@@ -1,4 +1,8 @@
 {
+  "compilerOptions": {
+    "verbatimModuleSyntax": true,
+    // otras opciones
+  },
   "files": [],
   "references": [
     {
@@ -9,3 +13,4 @@
     }
   ]
 }
+

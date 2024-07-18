@@ -47,7 +47,7 @@ namespace Expenses.API.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<LoginAccountQueryResponse> Login([FromQuery] LoginAccountQuery request)
+        public async Task<LoginAccountQueryResponse> Login([FromBody] LoginAccountQuery request)
         {
             LoginAccountQueryResponse response = await _mediator.Send(request);
 

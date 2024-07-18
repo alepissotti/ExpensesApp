@@ -109,6 +109,17 @@ namespace Expenses.API
             });
             // Http context accesor
             services.AddHttpContextAccessor();
+
+            //Cors
+            services.AddCors(options =>
+            {
+                options.AddPolicy("ExpensesApiPolicy", builder =>
+                {
+                    builder.AllowAnyHeader();
+                    builder.AllowAnyMethod();
+                    builder.AllowAnyOrigin();
+                });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -129,6 +140,7 @@ namespace Expenses.API
 
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseCors("ExpensesApiPolicy");
 
             app.UseEndpoints(endpoints =>
             {

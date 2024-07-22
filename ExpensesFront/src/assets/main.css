@@ -1,5 +1,7 @@
 @import './base.css';
-@import 'primeicons/primeicons.css'
+@import 'primeicons/primeicons.css';
 
-
-
+/* Definir la variable de color primario */
+:root {
+    --primary-color: rgb(64, 167, 152); /* Ajusta este valor según el color primario del tema Aura */
+}

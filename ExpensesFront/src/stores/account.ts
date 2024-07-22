@@ -34,6 +34,8 @@ export const useAccountStore = defineStore('acconts', {
         }
     },
     getters: {
-
+        fullName(): string {
+            return `${this.loggedAccount?.firstName} ${this.loggedAccount?.lastName}`
+        }
     }
 })

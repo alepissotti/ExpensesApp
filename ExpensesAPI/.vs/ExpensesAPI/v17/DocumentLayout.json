@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
               "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
               "RelativeToolTip": "Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAzwDgAAAAeAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAwDgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T17:42:16.156Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "Expenses.API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-18T16:57:29.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-18T16:57:29.954Z"
             },
             {
               "$type": "Document",
@@ -108,8 +107,7 @@
               "RelativeToolTip": "Expenses.API\\Controllers\\AccountController.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAswDMAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T15:52:13.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-13T15:52:13.338Z"
             }
           ]
         }

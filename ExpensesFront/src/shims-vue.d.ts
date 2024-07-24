@@ -5,3 +5,4 @@ declare module '@vue/runtime-core' {
     $axios: AxiosInstance;
   }
 }
+

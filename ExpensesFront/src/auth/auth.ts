@@ -3,7 +3,6 @@ import type Account from '@/models/account';
 import { getActivePinia } from 'pinia';
 import { useAccountStore } from '@/stores/account';
 
-
 const tokenKey = 'expensesAppToken'
 
 
@@ -39,4 +38,11 @@ export function handleRetriveData(): any {
             console.log('Error al recuperar el token:' + error)
         }
     }
+}
+
+export function hasPermissionToAccess(permissionName: string): boolean {
+    const pinia = getActivePinia();
+    const accountStore = useAccountStore(pinia);
+    const userPermissions: string[] = accountStore.permissions.map(permission => permission.name)
+    return userPermissions.includes(permissionName)
 }

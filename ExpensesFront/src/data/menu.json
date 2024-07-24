@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Account",
+        "icon": "pi pi-user",
+        "childrens": [
+            {
+                "name": "Profile",
+                "icon": "pi pi-user",
+                "permission": "ACCOUNTS_GETALL",
+                "navigateTo": "accounts"
+            }
+        ]
+    }
+]

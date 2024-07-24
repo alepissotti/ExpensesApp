@@ -19,6 +19,12 @@ import Password from 'primevue/password'
 import Button from 'primevue/button'
 import Toast from 'primevue/toast'
 import ToastService from 'primevue/toastservice'
+import Drawer from 'primevue/drawer'
+import Avatar from 'primevue/avatar'
+import Accordion from 'primevue/accordion'
+import AccordionContent from 'primevue/accordioncontent'
+import AccordionHeader from 'primevue/accordionheader'
+import AccordionPanel from 'primevue/accordionpanel'
 
 const app = createApp(App)
 
@@ -40,6 +46,12 @@ app.component('IconField', IconField)
 app.component('Password', Password)
 app.component('Button', Button)
 app.component('Toast', Toast)
+app.component('Drawer', Drawer)
+app.component('Avatar', Avatar)
+app.component('Accordion', Accordion)
+app.component('AccordionContent', AccordionContent)
+app.component('AccordionHeader', AccordionHeader)
+app.component('AccordionPanel', AccordionPanel)
 
 //Axios
 app.config.globalProperties.$axios = axiosInstance

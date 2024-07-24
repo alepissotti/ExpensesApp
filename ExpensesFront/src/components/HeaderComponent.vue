@@ -4,14 +4,17 @@
         <div class="user-info">
             <p>Hi {{ fullName }}!</p>
         </div>
+        <MenuComponent />
     </div>
 </template>
 
 <script lang="ts">
 import { useAccountStore } from '@/stores/account';
 import {computed} from 'vue'
+import MenuComponent from '@/components/Menu/MenuComponent.vue';
 export default {
     name: 'HeaderComponent',
+    components: {MenuComponent},
     setup() {
         const accountStore = useAccountStore()
 
@@ -28,7 +31,7 @@ export default {
 .header-container {
     height: 50px;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--p-primary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
     display: flex;
@@ -46,5 +49,6 @@ export default {
     margin-left: auto; 
     font-size: 1rem;
     color: #fff; 
+    margin-right: 1rem;
 }
 </style>

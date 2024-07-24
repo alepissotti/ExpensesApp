@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import axiosInstance from "@/plugins/axios";
 import type Account from "@/models/account";
+import type Permission from "@/models/permission";
 
 
 interface AccountState  {
@@ -36,6 +37,9 @@ export const useAccountStore = defineStore('acconts', {
     getters: {
         fullName(): string {
             return `${this.loggedAccount?.firstName} ${this.loggedAccount?.lastName}`
+        },
+        permissions(): Permission[] {
+            return this.loggedAccount ?this.loggedAccount?.permissions :[]
         }
     }
 })

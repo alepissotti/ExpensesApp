@@ -1,117 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.application\\features\\accounts\\queries\\loginaccountquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|solutionrelative:expenses.application\\features\\accounts\\queries\\loginaccountquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|solutionrelative:expenses.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|solutionrelative:expenses.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|solutionrelative:expenses.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DBEC9B7D-02E7-4F89-8330-06E6037BFF67}|Expenses.API\\Expenses.API.csproj|solutionrelative:expenses.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|c:\\cursos y capacitaciones\\expensesapp\\expensesapi\\expenses.application\\features\\accounts\\queries\\getaccountsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED3A28F-46A8-4E51-B53F-EB2D5B4832AC}|Expenses.Application\\Expenses.Application.csproj|solutionrelative:expenses.application\\features\\accounts\\queries\\getaccountsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginAccountQuery.cs",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
-              "RelativeDocumentMoniker": "Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
-              "RelativeToolTip": "Expenses.Application\\Features\\Accounts\\Queries\\LoginAccountQuery.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAmwDgAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T17:42:16.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Expenses.API\\appsettings.json",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\appsettings.json",
-              "RelativeToolTip": "Expenses.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-18T16:57:29.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Startup.cs",
-              "RelativeDocumentMoniker": "Expenses.API\\Startup.cs",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Startup.cs",
-              "RelativeToolTip": "Expenses.API\\Startup.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAowIsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T22:46:11.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Expenses.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Expenses.API\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-17T22:42:13.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetAccountsQuery.cs",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Queries\\GetAccountsQuery.cs",
-              "RelativeDocumentMoniker": "Expenses.Application\\Features\\Accounts\\Queries\\GetAccountsQuery.cs",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.Application\\Features\\Accounts\\Queries\\GetAccountsQuery.cs",
-              "RelativeToolTip": "Expenses.Application\\Features\\Accounts\\Queries\\GetAccountsQuery.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBQAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T18:21:39.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Expenses.API\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Cursos y capacitaciones\\ExpensesApp\\ExpensesAPI\\Expenses.API\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Expenses.API\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAswDMAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T15:52:13.338Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

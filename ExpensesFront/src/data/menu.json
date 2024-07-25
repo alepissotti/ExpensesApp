@@ -5,7 +5,13 @@
         "childrens": [
             {
                 "name": "Profile",
-                "icon": "pi pi-user",
+                "icon": "pi pi-address-book",
+                "permission": "ACCOUNTS_GETALL",
+                "navigateTo": "profile"
+            },
+            {
+                "name": "Accounts",
+                "icon": "pi pi-users",
                 "permission": "ACCOUNTS_GETALL",
                 "navigateTo": "accounts"
             }

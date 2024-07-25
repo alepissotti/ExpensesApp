@@ -2,6 +2,7 @@ import { jwtDecode } from 'jwt-decode';
 import type Account from '@/models/account';
 import { getActivePinia } from 'pinia';
 import { useAccountStore } from '@/stores/account';
+import router from '@/router';
 
 const tokenKey = 'expensesAppToken'
 
@@ -9,9 +10,13 @@ const tokenKey = 'expensesAppToken'
 export function isAutenticathed(): Boolean {
     return !!sessionStorage.getItem(tokenKey);
 }
-export function handleLogin(token: string, router: any): any {
+export function handleLogin(token: string, router: any): void {
     sessionStorage.setItem(tokenKey, token);
     router.push('/')
+}
+export function handleLogout(): void {
+    sessionStorage.clear();
+    router.push({name: 'login'})
 }
 
 export function handleRetriveData(): any {

@@ -93,3 +93,15 @@ body {
 .p-toast-message-icon {
   margin-top: 2px !important;
 }
+.p-error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+.p-invalid {
+  border: 1px red solid;
+  border-radius: var(--p-inputgroup-addon-border-radius);
+}
+.page-container {
+  margin: 2rem;
+}

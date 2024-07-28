@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Expenses.API.Controllers
 {
-    [Route("api/account")]
+    [Route("api/accounts")]
     [ApiController]
     public class AccountController : ControllerBase
     {
@@ -72,7 +72,7 @@ namespace Expenses.API.Controllers
 
         [HttpPut("change_password")]
         [AuthorizePermission(PermissionNames.ACCOUNTS_CHANGE_PASS)]
-        public async Task<ChangePassAccountCommandResponse> ChangePassword([FromBody] ChangePassAccountCommand request)
+        public async Task<ChangePassAccountCommandResponse> ChangePassword([FromQuery] ChangePassAccountCommand request)
         {
             ChangePassAccountCommandResponse response = await _mediator.Send(request);
             return response;

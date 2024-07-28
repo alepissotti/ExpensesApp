@@ -25,6 +25,11 @@ import Accordion from 'primevue/accordion'
 import AccordionContent from 'primevue/accordioncontent'
 import AccordionHeader from 'primevue/accordionheader'
 import AccordionPanel from 'primevue/accordionpanel'
+import Divider from 'primevue/divider'
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column'
+import Tooltip from 'primevue/tooltip'
+import Dialog from 'primevue/dialog'
 
 const app = createApp(App)
 
@@ -52,6 +57,14 @@ app.component('Accordion', Accordion)
 app.component('AccordionContent', AccordionContent)
 app.component('AccordionHeader', AccordionHeader)
 app.component('AccordionPanel', AccordionPanel)
+app.component('Divider', Divider)
+app.component('DataTable', DataTable)
+app.component('Column', Column)
+app.component('Dialog', Dialog)
+
+//Prime directives
+app.directive('tooltip', Tooltip)
+
 
 //Axios
 app.config.globalProperties.$axios = axiosInstance

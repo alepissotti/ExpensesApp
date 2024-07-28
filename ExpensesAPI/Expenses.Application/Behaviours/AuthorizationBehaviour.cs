@@ -4,6 +4,7 @@ using Expenses.Domain.Dtos;
 using Expenses.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
+using System.IdentityModel.Tokens.Jwt;
 using System.Text.Json;
 
 namespace Expenses.Application.Behaviours
@@ -33,7 +34,7 @@ namespace Expenses.Application.Behaviours
                 if (user is null || !user.Identity.IsAuthenticated)
                     throw new UnauthorizedAccessException("Usuario no autenticado");
 
-                var permissionsClaim = user.FindFirst("Account");
+                var permissionsClaim = user.Claims.FirstOrDefault();
                 if (permissionsClaim is null)
                     throw new UnauthorizedAccessException("Permisos no disponibles");
 

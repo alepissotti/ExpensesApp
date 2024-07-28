@@ -19,13 +19,13 @@ const router = createRouter({
     {
       path: '/profile',
       name: 'profile',
-      component: () => import('../views/accounts/Profile.vue'),
+      component: () => import('../views/accounts/ProfileView.vue'),
       meta: {requieresAuth: true}
     },
     {
       path: '/accounts',
       name: 'accounts',
-      component: () => import('../views/accounts/Accounts.vue'),
+      component: () => import('../views/accounts/AccountsView.vue'),
       meta: {requieresAuth: true}
     }
   ]

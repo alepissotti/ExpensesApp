@@ -126,14 +126,5 @@
     width: 100%;
   }
   
-  .p-error {
-    color: red;
-    font-size: 0.875rem;
-    margin-top: 0.25rem;
-  }
-  .p-invalid {
-    border: 1px red solid;
-    border-radius: var(--p-inputgroup-addon-border-radius);
-  }
   </style>
   

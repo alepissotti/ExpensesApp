@@ -3,6 +3,7 @@ import type Account from '@/models/account';
 import { getActivePinia } from 'pinia';
 import { useAccountStore } from '@/stores/account';
 import router from '@/router';
+import Permission from '@/models/permission';
 
 const tokenKey = 'expensesAppToken'
 
@@ -28,13 +29,22 @@ export function handleRetriveData(): any {
             const jwtDecoded = jwtDecode(token);
             const accountData = JSON.parse(`${jwtDecoded.sub}`)
             if (accountData) {
+                const accountPermissions = JSON.parse(JSON.stringify(accountData?.Permissions))
                 const loggedAccount: Account = {
                     id: accountData?.Id,
                     firstName: accountData?.FirstName,
                     lastName: accountData?.LastName,
                     userName: accountData?.UserName,
-                    permissions: JSON.parse(JSON.stringify(accountData?.Permissions)),
+                    permissions: accountPermissions.map((ap: any) => {
+                        const permission: Permission = {
+                            name: ap.Name,
+                            id: ap.Id,
+                            description: ap.description
+                        }
+                        return permission
+                    }),
                     roleId: accountData?.RoleId,
+                    roleName: accountData?.RoleName
                 }
                 accountStore.setAccountState(loggedAccount, token)
             }

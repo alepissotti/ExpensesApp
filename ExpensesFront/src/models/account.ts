@@ -6,5 +6,6 @@ export default interface Account {
     lastName: string,
     userName: string,
     roleId: number,
+    roleName: string,
     permissions: Permission[]
 }

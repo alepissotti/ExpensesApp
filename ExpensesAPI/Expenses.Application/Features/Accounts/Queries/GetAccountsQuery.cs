@@ -36,7 +36,9 @@ namespace Expenses.Application.Features.Accounts.Queries
 
         public async Task<List<AccountDTO>> Handle(GetAccountsQuery request, CancellationToken cancellationToken)
         {
-            IQueryable<Account> accounts = _context.Accounts.Where(x => !x.Deleted.HasValue || !x.Deleted.Value).AsQueryable();
+            IQueryable<Account> accounts = _context.Accounts
+                                                   .Include(acc => acc.Role)
+                                                   .Where(x => !x.Deleted.HasValue || !x.Deleted.Value).AsQueryable();
 
             List<Account> result = await accounts.Skip((request.Page - 1) * request.PageSize)
                                                  .Take(request.PageSize)

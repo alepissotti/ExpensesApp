@@ -46,7 +46,8 @@ const handleCloseMenu = (): void => {
 }
 
 .p-accordionheader *, .pi-user:before {
-    font-weight: bold !important;
+    font-weight: 600 !important;
+    color: var(--p-primary-color);
 }
 a {
     color: inherit;

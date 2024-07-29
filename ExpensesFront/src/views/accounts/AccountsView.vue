@@ -1,6 +1,6 @@
 <template >
     <div class="page-container">
-        <TitleComponent :title="'Cuentas'"/>
+        <TitleComponent :title="'Cuentas'" :show-button-new="true" :icon-button-new="'pi pi-user'" @handle-button-new-click="visibleNewAccount = true"/>
         <Card class="col-12 mt-2">
             <template #content>
                 <DataTable 
@@ -54,6 +54,11 @@
             :visible="visibleDeleteDialog"
             @handle-confirm="handleConfirm"
         />
+        <AccountFormComponent 
+            :visible="visibleNewAccount"
+            :loading="loadingNewAccount"
+            @handle-cancel="visibleNewAccount = false"
+        />
     </div>
 </template>
 <script setup lang="ts">
@@ -63,6 +68,7 @@ import { useAccountStore } from '@/stores/account';
 import { ref, onMounted } from 'vue';
 import ChangePasswordComponent from '@/components/Accounts/ChangePasswordComponent.vue';
 import DeleteDialogComponent from '@/components/Generic/DeleteDialogComponent.vue';
+import AccountFormComponent from '@/components/Accounts/AccountFormComponent.vue';
 
 const page = ref<number>(1)
 const pageSize = ref<number>(5)
@@ -73,6 +79,8 @@ const loadingChangePassword = ref<boolean>(false)
 const visibleChangePassword = ref<boolean>(false)
 const loadingDeleteDialog = ref<boolean>(false)
 const visibleDeleteDialog = ref<boolean>(false)
+const visibleNewAccount = ref<boolean>(false)
+const loadingNewAccount = ref<boolean>(false)
 
 onMounted(() => {
     getAccounts()

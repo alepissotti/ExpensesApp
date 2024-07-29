@@ -1,7 +1,7 @@
 <template>
     <div class="page-container">
-      <TitleComponent :title="'Profile'"/>
-      <Card class="col-12 md:col-6 mt-3">
+      <TitleComponent :title="'Profile'" :show-button-new="false" :icon-button-new="undefined"/>
+      <Card class="col-12 md:col-8 mt-3">
         <template #title>
           <div class="text-2xl text-primary">
             <i class="text-2xl pi pi-user"></i>

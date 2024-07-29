@@ -9,13 +9,16 @@ const tokenKey = 'expensesAppToken'
 
 
 export function isAutenticathed(): Boolean {
-    return !!sessionStorage.getItem(tokenKey);
+    return sessionStorage.getItem(tokenKey) != null;
 }
 export function handleLogin(token: string, router: any): void {
     sessionStorage.setItem(tokenKey, token);
     router.push('/')
 }
 export function handleLogout(): void {
+    const pinia = getActivePinia();
+    const accountStore = useAccountStore(pinia);
+    accountStore.setAccountState(null, null)
     sessionStorage.clear();
     router.push({name: 'login'})
 }

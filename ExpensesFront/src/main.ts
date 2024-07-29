@@ -30,6 +30,7 @@ import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
 import Tooltip from 'primevue/tooltip'
 import Dialog from 'primevue/dialog'
+import Select from 'primevue/select'
 
 const app = createApp(App)
 
@@ -61,6 +62,7 @@ app.component('Divider', Divider)
 app.component('DataTable', DataTable)
 app.component('Column', Column)
 app.component('Dialog', Dialog)
+app.component('Select', Select)
 
 //Prime directives
 app.directive('tooltip', Tooltip)

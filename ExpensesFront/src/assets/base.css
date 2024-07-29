@@ -105,3 +105,34 @@ body {
 .page-container {
   margin: 2rem;
 }
+.drawer-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.drawer-header-container {
+  height: 50px;
+  width: 100%;
+  background-color: var(--p-primary-color);
+  color: #FFF;
+  padding-top:0.6rem;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+.drawer-header-container *, .pi-user-edit:before {
+  font-weight: 600 !important;
+}
+.drawer-form-content {
+  flex: 1;
+  margin: 1rem;
+}
+
+.drawer-divider {
+  margin-top: 2rem;
+}
+
+.drawer-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

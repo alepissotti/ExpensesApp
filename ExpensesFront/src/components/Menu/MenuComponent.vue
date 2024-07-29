@@ -2,7 +2,7 @@
     <div class="card flex justify-center">
         <Drawer v-model:visible="visible">
             <template #container="{ closeCallback }">
-                <div class="flex flex-col h-full">
+                <div class="flex flex-col">
                     <div class="header-drawer">
                         <span>ExpensesApp</span>
                         <i class="pi pi-wallet"></i>

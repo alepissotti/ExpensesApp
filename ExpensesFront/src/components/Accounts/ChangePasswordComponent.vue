@@ -2,13 +2,13 @@
     <Drawer :visible="visible" :position="'right'" @show="handleShow">
         <template #container>
             <div class="drawer-content">
-                <div class="header-container">
+                <div class="drawer-header-container">
                     <h3>
                         Change Password
                         <i class="pi pi-user-edit"></i>
                     </h3>
                 </div>
-                <div class="form-content">
+                <div class="drawer-form-content">
                     <div class="mb-4 mt-2">
                         <InputGroup :class="{ 'p-invalid': oldPasswordError }">
                             <InputGroupAddon>
@@ -54,11 +54,11 @@
                     </div>
                 </div>
                 <Divider class="drawer-divider"/>
-                <div class="button-container mb-2">
+                <div class="drawer-button-container mb-2">
                     <Button severity="warn" @click="handleCancel">
                         Cancel
                     </Button>
-                    <Button severity="success" @click="handleSubmit" :loading="loading">
+                    <Button severity="success" @click="handleSubmit" :loading="loading" loading-icon="pi pi-spin pi-spinner">
                         Ok
                     </Button>
                 </div>
@@ -117,36 +117,7 @@ const handleShow = () => {
 </script>
 
 <style scoped>
-.drawer-content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 
-.form-content {
-    flex: 1;
-    margin: 1rem;
-}
 
-.drawer-divider {
-    margin-top: 2rem;
-}
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-.header-container {
-    height: 50px;
-    width: 100%;
-    background-color: var(--p-primary-color);
-    color: #FFF;
-    padding-top:0.6rem;
-    padding-left: 1rem;
-    font-weight: bold;
-}
-.header-container *, .pi-user-edit:before {
-    font-weight: 600 !important;
-}
 </style>
